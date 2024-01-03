@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- <img src="./pexels-photo-1323550.jpeg" alt="" /> -->
+    <div class="container">
+      <div class="layout">
+        <div class="cards">
+          <div id="card_todo" class="card">
+            <h1>To do <span class="counter">&nbsp;&nbsp;&nbsp;0</span></h1>
+            <div
+              id="addedTaskTodo"
+              style="margin-top: 10px"
+              class="results"
+            ></div>
+            <div class="buttons">
+              <button id="button">&nbsp;&nbsp;+ &nbsp;&nbsp; Add card</button>
+            </div>
+          </div>
+          <div id="card_prog" class="card">
+            <h1>
+              In progress <span class="counter">&nbsp;&nbsp;&nbsp;0</span>
+            </h1>
+            <div
+              id="addedTaskProg"
+              style="margin-top: 10px"
+              class="results"
+            ></div>
+            <div class="buttons">
+              <button id="button">&nbsp;&nbsp;+ &nbsp;&nbsp; Add card</button>
+            </div>
+          </div>
+          <div id="card_stuck" class="card">
+            <h1>Stuck <span class="counter">&nbsp;&nbsp;&nbsp;0</span></h1>
+            <div
+              id="addedTaskStuck"
+              style="margin-top: 10px"
+              class="results"
+            ></div>
+            <div class="buttons">
+              <button id="button">&nbsp;&nbsp;+ &nbsp;&nbsp; Add card</button>
+            </div>
+          </div>
+          <div id="card_done" class="card">
+            <h1>Done <span class="counter">&nbsp;&nbsp;&nbsp;0</span></h1>
+            <div
+              id="addedTaskDone"
+              style="margin-top: 10px"
+              class="results"
+              draggable="true"
+            ></div>
+            <div class="buttons">
+              <button id="button">&nbsp;&nbsp;+ &nbsp;&nbsp; Add card</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Modal" class="modal">
+      <div class="modal-content">
+        <div class="content">
+          <h1 id="titlw">Add task</h1>
+          <div>
+            <p>Title</p>
+            <textarea name="" id="title1" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <p>Description</p>
+            <textarea name="" id="description1" cols="30" rows="10"></textarea>
+          </div>
+          <div class="sta" id="todo_status">
+            <label>Status</label>
+            <select id="sta">
+              <option value="To do">To do</option>
+              <option value="In progress">In progress</option>
+              <option value="Stuck">Stuck</option>
+              <option value="Done">Done</option>
+            </select>
+          </div>
+          <div class="sta" id="todo_pri">
+            <label>Priority</label>
+            <select id="pri">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+          <div><button id="add_button">Add task</button></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./todo.js"></script>
+</html>
